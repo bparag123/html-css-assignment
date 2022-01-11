@@ -1,99 +1,214 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding : 0;
-    font-size: 15px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
 }
 
-:root{
-    --primary : #0d6efd;
+:root {
+  --primary: #0d6efd;
 }
 
-.nav-link{
-    color: white !important;
-    font-weight: bolder;
+.nav-link {
+  color: white !important;
+  font-weight: bolder;
 }
 
-.nav-item .login{
-    color: var(--primary) !important;
-    background-color: whitesmoke;
-    border-radius: 0;
-    width: 5rem;
-    margin-left: 8rem;
+.nav-item .login {
+  color: var(--primary) !important;
+  background-color: whitesmoke;
+  border-radius: 0;
+  width: 5rem;
+  margin-left: 8rem;
 }
 
-.navbar-nav{
-    margin-left: auto;
-    margin-right: auto;
-    
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-.nav-item{
-    margin-right: 2.5rem;
+.nav-item {
+  margin-right: 2.5rem;
 }
 
-.search-input{
-    width: 20rem !important;
-    border-radius: 0;;
-    border-color: white;
-    
+.search-input {
+  width: 20rem !important;
+  border-radius: 0;
+  border-color: white;
 }
 
-.search-btn{
-    border-radius: 0;
-    margin-right: 1.5rem;
+.search-btn {
+  border-radius: 0;
+  margin-right: 1.5rem;
 }
 
-.bi-search{
-    color: var(--primary);
+.bi-search {
+  color: var(--primary);
 }
 
-#flogo{
-    margin-top: 0.1rem;
-    width: 4rem;
+#flogo {
+  margin-top: 0.1rem;
+  width: 4rem;
 }
 
-.logo{
-    margin-right: 0;
+.logo {
+  margin-right: 0;
 }
 
 /* Css for Categories */
-.categories{
-    border-bottom : 1px solid lightgrey;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    padding : 0% 10% 3% 10%;
+.categories {
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1% 10% 1% 10%;
+ 
 }
 
-.cat-item > img{
-    width: 100%;
-    min-height: 5rem;
+.cat-item > img {
+  width: 100%;
+  max-height: 4rem;
 }
 
-.cat-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin-left: 3rem;
+.cat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-left: 1%;
+  
+  min-width: 9%;
+  max-width: 9%;
 }
 
-.dropdown{
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+.dropdown {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
-.cat-switch{
-    border: none;
-    background-color: inherit;
-    justify-self: center;
-    align-self: center;
+.cat-switch {
+  border: none;
+  background-color: inherit;
+  justify-self: center;
+  align-self: center;
+}
+
+/* This is css for carousel */
+
+.carousel-item > img {
+  width: 10rem;
+  max-height: 10rem;
+}
+
+.product-card > p {
+  font-size: 0.5rem;
+  text-overflow: ellipsis;
+}
+
+.product-card {
+  text-align: center;
+  border: none;
+  margin-right: 1rem;
+  border-radius: 0;
+  height: 11rem;
+}
+
+.carousel button {
+  height: 40px;
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: black;
 }
 
 
+
+
+.product-card > img {
+  width: 100%;
+  height: 50%;
+}
+
+.offer-text {
+  color: green;
+}
+
+.card-row {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.advt-card * {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.advt-card > img {
+  width: 100%;
+}
+.btn {
+  border-radius: 0;
+}
+
+#view-deals {
+  align-items: center;
+  text-align: center;
+}
+
+.deal-container {
+  padding: 0.5rem;
+}
+
+.myslide-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.advt-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  box-shadow: 0.1rem 0.1rem 0.2rem lightgrey, -0.1rem 0.1rem 0.2rem lightgray;
+}
+
+.card {
+  width: 6.5rem;
+}
+
+.heading {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.container {
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.slider-bar {
+  box-shadow: 0.1rem 0.1rem 0.2rem lightgrey, -0.1rem 0.1rem 0.2rem lightgray;
+  margin-right: 1%;
+  width: 79%;
+}
+
+.shop-now {
+  box-shadow: 0.1rem 0.1rem 0.2rem lightgrey, -0.1rem 0.1rem 0.2rem lightgray;
+}
+
+.shop-now button,
+.deal-container button {
+  font-size: 0.7rem;
+}
