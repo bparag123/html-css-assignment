@@ -1,0 +1,240 @@
+$primary: #0d6efd;
+
+@mixin createflex(
+  $direction: row,
+  $wrap: nowrap,
+  $align: center,
+  $justify: center
+) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+  
+  #flogo {
+    margin-top: 0.1rem;
+    width: 4rem;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+  .nav-item {
+    margin-right: 2.5rem;
+    .search-input {
+      width: 20rem !important;
+      border-radius: 0;
+      border-color: white;
+    }
+    .search-btn {
+      border-radius: 0;
+      margin-right: 1.5rem;
+      .bi-search {
+        color: $primary;
+      }
+    }
+    
+    .nav-link {
+      color: white !important;
+      font-weight: bolder;
+      .login {
+        color: $primary !important;
+        background-color: whitesmoke;
+        border-radius: 0;
+        width: 5rem;
+        margin-left: 8rem;
+      }
+    }
+  }
+}
+
+.categories {
+  border-bottom: 1px solid lightgrey;
+  @include createflex($justify: space-evenly);
+  padding: 1% 10% 1% 10%;
+
+  .cat-item {
+    @include createflex($justify: space-between, $direction: column);
+    margin-left: 1%;
+    min-width: 9%;
+    max-width: 9%;
+
+    img {
+      width: 100%;
+      max-height: 4rem;
+    }
+
+    .dropdown {
+      @include createflex();
+
+      .cat-switch {
+        border: none;
+        background-color: inherit;
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+}
+
+.heading {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+
+.myslide-container {
+    @include createflex($align:none);
+
+    .slider-bar {
+        box-shadow: 0.1rem 0.1rem 0.2rem lightgrey, -0.1rem 0.1rem 0.2rem lightgray;
+        margin-right: 1%;
+        width: 79%;
+
+        .deal-container {
+            padding: 0.5rem;
+            button{
+                font-size: 0.7rem;
+            }
+          }
+
+      }
+
+      
+
+  }
+
+.carousel {
+  button {
+    height: 40px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: black;
+  }
+}
+
+
+.card-row {
+    @include createflex($justify:none);
+    padding: 0.5rem;
+    .product-card {
+        text-align: center;
+        border: none;
+        margin-right: 1rem;
+        border-radius: 0;
+        height: 11rem;
+        .offer-text {
+            color: green;
+          }
+        img {
+            width: 100%;
+            height: 50%;
+          }
+        p {
+            font-size: 0.5rem;
+            text-overflow: ellipsis;
+          }
+      }
+  }
+
+  .card {
+    width: 6.5rem;
+  }
+
+  .container {
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+  }
+
+  .advt-card {
+    min-height: 100%;
+    @include createflex($direction:column, $justify:space-around);
+    width: 20%;
+    box-shadow: 0.1rem 0.1rem 0.2rem lightgrey, -0.1rem 0.1rem 0.2rem lightgray;
+  }
+
+  .shop-now {
+    box-shadow: 0.1rem 0.1rem 0.2rem lightgrey, -0.1rem 0.1rem 0.2rem lightgray;
+    button{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cat-item {
+      min-width: 20%;
+      max-width: 20%;
+      margin-right: 0.1rem;
+    }
+  
+    .cat-item > div,.dropdown > label{
+      font-size: 0.5rem;
+    }
+  
+    .cat-item > img {
+      
+      max-height: 2rem;
+    }
+  
+    .categories {
+      flex-wrap: wrap;
+      padding: 0;
+      
+    }
+  
+    /* Carousel */
+    .myslide-container {
+      flex-wrap: wrap;
+    }
+  
+    
+  
+    .product-card > p {
+      font-size: 0.3rem;
+      text-overflow: ellipsis;
+    }
+  
+    .product-card {
+      
+      height: 6rem;
+    }
+  
+    .card-row {
+      
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      width: 4rem;
+    }
+    
+  
+    .nav-item .login {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  
+    .nav-item {
+      margin-right: 0;
+    }
+    
+    .deal-container {
+      padding: 0;
+    }
+    .heading {
+      margin-right: 0;
+    }
+    
+    .shop-now button,
+  .deal-container button {
+    font-size: 0.3rem;
+  }
+  }
