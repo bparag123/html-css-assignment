@@ -99,10 +99,7 @@
 
 /* This is css for carousel */
 
-.carousel-item > img {
-  width: 10rem;
-  max-height: 10rem;
-}
+
 
 .product-card > p {
   font-size: 0.5rem;
@@ -126,8 +123,6 @@
   margin-bottom: auto;
   background-color: black;
 }
-
-
 
 
 .product-card > img {
@@ -158,10 +153,6 @@
   border-radius: 0;
 }
 
-#view-deals {
-  align-items: center;
-  text-align: center;
-}
 
 .deal-container {
   padding: 0.5rem;
@@ -211,4 +202,77 @@
 .shop-now button,
 .deal-container button {
   font-size: 0.7rem;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .cat-item {
+    min-width: 20%;
+    max-width: 20%;
+    margin-right: 0.1rem;
+  }
+
+  .cat-item > div,.dropdown > label{
+    font-size: 0.5rem;
+  }
+
+  .cat-item > img {
+    
+    max-height: 2rem;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    padding: 0;
+    
+  }
+
+  /* Carousel */
+  .myslide-container {
+    flex-wrap: wrap;
+  }
+
+  
+
+  .product-card > p {
+    font-size: 0.3rem;
+    text-overflow: ellipsis;
+  }
+
+  .product-card {
+    
+    height: 6rem;
+  }
+
+  .card-row {
+    
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 4rem;
+  }
+  
+
+  .nav-item .login {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .nav-item {
+    margin-right: 0;
+  }
+  
+  .deal-container {
+    padding: 0;
+  }
+  .heading {
+    margin-right: 0;
+  }
+  
+  .shop-now button,
+.deal-container button {
+  font-size: 0.3rem;
+}
 }
