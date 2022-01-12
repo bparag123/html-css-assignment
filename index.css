@@ -9,9 +9,18 @@
   --primary: #0d6efd;
 }
 
+img:hover{
+  cursor: pointer;
+}
+
 .nav-link {
   color: white !important;
   font-weight: bolder;
+  
+}
+
+.navbar-nav *{
+  font-size: 0.7rem;
 }
 
 .nav-item .login {
@@ -71,6 +80,10 @@
   max-height: 4rem;
 }
 
+.cat-item *{
+  font-size: 0.7rem;
+}
+
 .cat-item {
   display: flex;
   flex-direction: column;
@@ -78,7 +91,6 @@
   justify-content: space-between;
   flex-wrap: nowrap;
   margin-left: 1%;
-  
   min-width: 9%;
   max-width: 9%;
 }
@@ -126,7 +138,8 @@
 
 
 .product-card > img {
-  width: 100%;
+  align-self: center;
+  width: max-content;
   height: 50%;
 }
 
@@ -149,6 +162,11 @@
 .advt-card > img {
   width: 100%;
 }
+
+.advt-card button{
+  width: 80%;
+}
+
 .btn {
   border-radius: 0;
 }
@@ -171,7 +189,8 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  width: 20%;
+  width: 15%;
+  border: 1px solid yellow;
   box-shadow: 0.1rem 0.1rem 0.2rem lightgrey, -0.1rem 0.1rem 0.2rem lightgray;
 }
 
@@ -192,7 +211,7 @@
 .slider-bar {
   box-shadow: 0.1rem 0.1rem 0.2rem lightgrey, -0.1rem 0.1rem 0.2rem lightgray;
   margin-right: 1%;
-  width: 79%;
+  width: 84%;
 }
 
 .shop-now {
@@ -208,8 +227,8 @@
 
 @media screen and (max-width: 768px) {
   .cat-item {
-    min-width: 20%;
-    max-width: 20%;
+    min-width: 9%;
+    max-width: 9%;
     margin-right: 0.1rem;
   }
 
@@ -254,7 +273,10 @@
     width: 4rem;
   }
   
-
+  .advt-card * {
+    font-size: 0.6rem;
+    text-align: center;
+  }
   .nav-item .login {
     margin-left: 0;
     margin-top: 1rem;
